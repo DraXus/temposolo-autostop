@@ -1,0 +1,13 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.0.0] - 2026-02-24
+
+### Added
+- Initial release
+- Auto-stop timer when computer locks (idle state detection via Chrome Idle API)
+- Auto-stop timer on browser suspension (shutdown/restart)
+- Content script targeting `https://temposolo.es/timer`
+- Clicks "Detener" button to stop the timer; falls back to localStorage update
+- Background service worker using Manifest V3
