@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-03-03
+
+### Added
+- Extension icons (16x16, 48x48, 128x128)
+
 ## [1.0.0] - 2026-02-24
 
 ### Added
