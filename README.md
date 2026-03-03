@@ -46,10 +46,15 @@ The extension consists of three main components:
 The extension requires the following permissions:
 
 - `idle` - To detect when your computer locks
-- `storage` - For potential future settings storage
-- `tabs` - To find and interact with Temposolo tabs
-- `scripting` - To inject the content script
-- Host permission for `https://temposolo.es/*` - To access the timer page
+- `tabs` - To find open Temposolo timer tabs and send a message to stop the timer
+
+It also runs a content script on:
+
+- `https://temposolo.es/timer*` - To click the stop button on the timer page
+
+## Privacy
+
+This extension does not collect or transmit user data. See `PRIVACY.md`.
 
 ## Debugging
 
@@ -65,11 +70,9 @@ To see the extension logs:
 
 - Requires the Temposolo timer tab to be open in Chrome
 - Only works when Chrome is running
-- Icon placeholders (icon16.png, icon48.png, icon128.png) need to be created
 
 ## Future Improvements
 
-- Add extension icons
 - Add user-configurable idle detection interval
 - Add notifications when timer is stopped
 - Add popup UI with extension status

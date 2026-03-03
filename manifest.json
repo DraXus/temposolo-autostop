@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Temposolo Auto-Stop",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Automatically stops the Temposolo timer when your computer locks or shuts down",
   "icons": {
     "16": "logo_16.png",
@@ -10,12 +10,7 @@
   },
   "permissions": [
     "idle",
-    "storage",
-    "tabs",
-    "scripting"
-  ],
-  "host_permissions": [
-    "https://temposolo.es/*"
+    "tabs"
   ],
   "background": {
     "service_worker": "background.js"
